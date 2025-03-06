@@ -3,8 +3,11 @@ using System.Drawing;
 
 Console.WriteAsciiStyled("Redis Sample", new Colorful.StyleSheet(Color.OrangeRed));
 
-//await RedisPing.Run();
-await RedisIdentity.Run();
+// Simple ping test
+await RedisPing.Run();
+
+// Test Azure Identity access to Redis
+//await RedisIdentity.Run();
 
 //GettingStarted.Run();
 //RedisString.Run();
